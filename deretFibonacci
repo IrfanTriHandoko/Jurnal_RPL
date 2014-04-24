@@ -1,0 +1,37 @@
+package javaapplication2;
+
+import java.io.*;
+
+public class JurnalMod8 {
+
+    public static void main(String args[]) 
+    {
+        String str;
+        int no,f1,f2,f3;
+        f2=0;
+        f3=1;
+
+        try{
+             System.out.print("Masukkan deret angka fibonacci : ");
+             System.out.flush();
+             BufferedReader obj = new BufferedReader(new InputStreamReader(System.in));
+             str=obj.readLine();
+             no=Integer.parseInt(str);
+
+             System.out.print(f3+"  ");
+             System.out.flush();
+                  while(no>1)
+                  {
+                          f1=f2;
+                          f2=f3;
+                          f3=f1+f2;
+                          System.out.print(f3+"  ");
+                          System.out.flush();
+                          no=no-1;
+                 }
+             }
+        catch(Exception e)
+        {}
+    }
+    
+}
