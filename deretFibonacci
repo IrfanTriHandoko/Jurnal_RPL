@@ -20,7 +20,7 @@ public class JurnalMod8 {
 
              System.out.print(f3+"  ");
              System.out.flush();
-                  while(no>1)
+                  while(no<1)
                   {
                           f1=f2;
                           f2=f3;
